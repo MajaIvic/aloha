@@ -1,0 +1,330 @@
+
+  /* Extra resets */
+  /* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+ 
+/* Typohraohy */
+
+.p{
+    color: darkslategray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
+}
+
+h2{
+  text-align: center;
+    font-size: 40px;
+    color: black;
+    font-style: italic;
+    padding-top: 100px;
+    width: 100%;
+}
+
+
+h1{ 
+  text-align: center;
+  font-size: 60px;
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+  /*Common Layout Classes*/
+
+.container {
+  
+     width: 1240px;
+     margin: 0 auto; /* to center the element */
+     background-color: white; /*remove later!*/
+     
+
+}
+.container-small  {
+    width: 740px;
+    margin: 0 auto; /* to center the element */
+    background-color: white; /*remove later */
+
+}
+
+ /* header area */
+ 
+ .top {
+   display: flex;
+   justify-content: space-between;
+   height: 150px;
+   
+   
+ 
+   
+ }
+ .aloha-icon {
+  
+  width: 280px;
+  height: 150px;
+  padding-left: 50px;
+  padding-top: 17px;
+  
+}
+.cart-icon {
+  width: 155px;
+  height: 150px;
+  padding-right: 60px;
+}
+.afsu {
+  padding-top: 70px;
+  padding-right: 70px;
+  
+  color: crimson;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+ 
+ }
+ 
+
+
+  /* banner area */
+ 
+ 
+ .banner { 
+     
+     /* padding: 220px; */
+     height: 500px;
+     background-image: url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+     background-repeat: no-repeat, repeat;
+     background-position: center 100px, center;
+     background-size: contain, cover;
+
+     
+     /* 3 lines horizontal and vertical align  */
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ } 
+.banner-text{
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+}
+.new-colection {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  align-self: center;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  
+  
+}
+.spring-summer {
+  color: white;
+  align-self: center;
+  font-size: 100px;
+}
+  
+
+
+
+
+
+
+ 
+ /* style-class section */
+ 
+
+ .style-text  {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; 
+   padding: 100px;
+   height: 400px;
+   
+}
+.style-class {
+  align-self: center;
+  font-size: 60px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-style: italic;
+  opacity: .65;
+
+}
+ 
+
+.text {
+  font-size: 30px;
+  align-self: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  opacity: .65;
+
+
+}
+
+/* category-section */
+.category {
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  
+}
+  .mens {
+    width: 290px;
+    height: auto;
+    background-image: url(../images/mens-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 170px;
+  }
+  
+
+  .trends {
+    width: 140px;
+    height: auto;
+    background-image: url(../images/trends-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 170px;
+  }
+  
+  .glasses {
+    width: 140px;
+    height: auto;
+    background-image: url(../images/glasses-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px;
+  }
+  
+  .sale {
+    width: 140px;
+    height: auto;
+    background-image: url(../images/sale-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 190px;
+    
+  }
+  .bags {
+    width: 140px;
+    height: auto;
+    background-image: url(../images/bags-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 190px;
+  }
+  .womens {
+    width: 600px;
+    height: auto;
+    background-image: url(../images/womens-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px;
+  } 
+
+
+
+
+  
+
+
+/* category-products */
+.ml-products {
+  padding: 80px;
+  font-size: 50px;
+}
+
+/* category-sign-up */
+
+.sign-up {
+  padding: 150px;
+  background-image: url('../images/wave-bkgd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.wave {
+  display: flex;
+}
+ 
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+.site-footer {
+  background: rgb(54, 54, 54);
+  padding: 20px;
+  /* height: 180px; */
+}
+.site-footer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.site-footer p {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-self: stretch;
+}
+.site-footer ul {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  
+}
+
+.footer-info {
+  align-self: flex-start;
+  
+  
+
+}
+
+ .text-updates {
+   text-align: center;
+ }
+
+ 
+  
+
+  
+/* Breakpoint */
+/* tablet size */
+@media screen and (min-width: 600px) {
+}
+
+/* desktop size */
+@media screen and (min-width: 1240px) {
+  .mens {
+    width: 50%;
+  }
+}
+
+ 
+
+ 
