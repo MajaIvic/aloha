@@ -4,87 +4,54 @@
 html {
     box-sizing: border-box;
   }
-  *, *:before, *:after {
+   *, *:before, *:after {
     box-sizing: inherit;
-  }
- 
-/* Typohraohy */
-
-.p{
-    color: darkslategray;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    
-}
-
-h2{
-  text-align: center;
-    font-size: 40px;
-    color: black;
-    font-style: italic;
-    padding-top: 100px;
-    width: 100%;
-}
-
-
-h1{ 
-  text-align: center;
-  font-size: 60px;
-  color: blue;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-  /*Common Layout Classes*/
-
-.container {
-  
-     width: 1240px;
-     margin: 0 auto; /* to center the element */
-     background-color: white; /*remove later!*/
-     
-
-}
-.container-small  {
-    width: 740px;
-    margin: 0 auto; /* to center the element */
-    background-color: white; /*remove later */
-
-}
+  } 
 
  /* header area */
  
  .top {
    display: flex;
    justify-content: space-between;
-   height: 150px;
+    height: 90px; 
    
    
  
    
  }
  .aloha-icon {
+   /* width: 50%;
+   height: auto;
+   padding-left: 15%;
+   padding-top: 4%; */
+
   
-  width: 280px;
+  width: 250px;
   height: 150px;
-  padding-left: 50px;
-  padding-top: 17px;
-  
+  padding-left: 100px;
+  padding-bottom: 60px;
+   
 }
 .cart-icon {
-  width: 155px;
-  height: 150px;
-  padding-right: 60px;
+  
+
+ width: 120px;
+ height: 120px;
+ padding-right: 60px;
+ padding-bottom: 40px;
 }
-.afsu {
-  padding-top: 70px;
-  padding-right: 70px;
-  color: crimson;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  text-transform: uppercase;
+.directory h5 {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
- 
+  
+  
+  
+  color: #e2574c;
+  font-family: Ralway,sans-serif;
+  text-transform: uppercase;
+  
+  
  }
  
 
@@ -93,26 +60,25 @@ h1{
  
  
  .banner { 
-     
-     /* padding: 220px; */
-     height: 600px;
-     background-image: url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
-     background-repeat: no-repeat, repeat;
-     background-position: center 100px, center;
-     background-size: contain, cover;
-
-     
-     /* 3 lines horizontal and vertical align  */
-     
-     display: flex;
-     justify-content: center;
-     align-items: center;
+  width: 100%;
+  height: 35vw;
+  margin: 0%;
+  border-style: solid;
+  background-image: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../images/banner-girl.png),url(../images/flower-bkgd.jpg);
+  background-repeat: repeat,no-repeat,repeat;
+  background-size: cover,250px,contain;
+  
+  background-position: center,center 60px,center;
+  display: flex;
+  justify-content: center ;
+  
  } 
 .banner-text{
   display: flex;
+  align-self: center;
   flex-direction: column;
   font-size: 50px;
-}
+} 
 .new-colection {
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -188,7 +154,7 @@ h1{
   border-style:solid;
   border-color: white;
   border-width: 4px 4px 4px 0px;
-  background: url(../images/mens-category.jpg);
+  background:linear-gradient(180deg,rgba(0,0,0,.30) 0,rgba(0,0,0,.30)), url(../images/mens-category.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -199,7 +165,7 @@ h1{
   width: 25%;
   height: 25vw;
   border:  4px solid white;
-  background: url(../images/trends-category.jpg);
+  background: linear-gradient(180deg,rgba(0,0,0,.30) 0,rgba(0,0,0,.30)),url(../images/trends-category.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -212,7 +178,7 @@ h1{
   border-style:solid;
   border-color: white;
   border-width: 4px 0px 4px 4px;
-  background: url(../images/glasses-category.jpg);
+   background:linear-gradient(180deg,rgba(0,0,0,.30) 0,rgba(0,0,0,.30)), url(../images/glasses-category.jpg); 
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -224,7 +190,7 @@ h1{
   border-style:solid;
   border-color: white;
   border-width: 4px 4px 4px 0px;
-  background: url(../images/sale-category.jpg);
+  background: linear-gradient(180deg,rgba(0,0,0,.30) 0,rgba(0,0,0,.30)),url(../images/sale-category.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -234,7 +200,7 @@ h1{
   width: 25%;
   height: 25vw;
   border:  4px solid white;
-  background: url(../images/bags-category.jpg);
+  background:linear-gradient(180deg,rgba(0,0,0,.30) 0,rgba(0,0,0,.30)), url(../images/bags-category.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -246,80 +212,19 @@ h1{
   border-style:solid;
   border-color: white;
   border-width: 4px 0px 4px 4px;
-  background: url(../images/womens-category.jpg);
+  background: linear-gradient(180deg,rgba(0,0,0,.30) 0,rgba(0,0,0,.30)),url(../images/womens-category.jpg); 
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
   
-  /* display: grid;
-  grid-template-areas: 'Mens Mens'
-                      'Trends Glasses'
-                      'Sale Bags'
-                      'Womens Womens' */
-  /* justify-content: space-around; */
-
-
-  
-/* }
-  .mens {
-    width: 290px;
-    height: auto;
-    background-image: url(../images/mens-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 170px;
-  } */
   
 
-  /* .trends {
-    width: 140px;
-    height: auto;
-    background-image: url(../images/trends-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 170px;
-  }
-  
-  .glasses {
-    width: 140px;
-    height: auto;
-    background-image: url(../images/glasses-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 160px;
-  }
-  
-  .sale {
-    width: 140px;
-    height: auto;
-    background-image: url(../images/sale-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 205px;
-    
-  }
-  .bags {
-    width: 140px;
-    height: auto;
-    background-image: url(../images/bags-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 205px;
-  }
-  .womens {
-    width: 600px;
-    height: auto;
-    background-image: url(../images/womens-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 115px;
-  } 
- */
 
+ 
+  
 
 
   
@@ -327,24 +232,78 @@ h1{
 
 /* category-products */
 .ml-products {
-  padding: 80px;
-  font-size: 50px;
-}
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-style: italic;
+  opacity: .65;
 
+}
+.the-loop{
+  display: flex;
+  flex-wrap: wrap;
+}
+.the-loop div h6 {
+  display: flex;
+  justify-content: center;
+  color: #969696;
+  font-family: Raleway, sans-serif;
+}
+.the-loop div h3 {
+  display: flex;
+  justify-content: center;
+  color: #e2574c;
+  font-family: Playfair Display Web,serif;
+  
+}
+.the-loop div p {
+  display: flex;
+  justify-content: center;
+  color: #969696;
+  font-family: Raleway, sans-serif;
+}
 /* category-sign-up */
 
 .sign-up {
-  padding: 150px;
-  background-image: url('../images/wave-bkgd.jpg');
+  width: 100%;
+  height: 24vw;
+  border-style: solid;
+  background-image: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url('../images/wave-bkgd.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-}
-.wave {
+  border-color: white;
+  border-width: 0px 0px 8px 0px;
   display: flex;
-}
- 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
+  
+
+}
+ .updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-family: Playfair Display;
+  font-size: 35px;
+  margin-bottom: 48px;
+  color: white;
+
+}
+ .text-updates {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin-bottom: 80px;
+  color: white;
+}  
 
 
 
@@ -360,8 +319,9 @@ h1{
 
 
 .site-footer {
-  background: rgb(54, 54, 54);
-  padding: 20px;
+  
+  background: #242424;
+  padding: 80px;
   /* height: 180px; */
 }
 .site-footer{
@@ -378,25 +338,39 @@ h1{
   color: white;
   align-self: stretch;
 }
-.site-footer ul {
+ /* .site-footer ul {
+  display: flex;
+  flex-direction: column;
+  
+  color: white;
+  font-size: 20px;
+  padding: 20px; }
+   */
+ /* .site-footer div ul {
+   display: flex;
+   align-self: flex-end;
+
+   justify-content: column;
+ } */
+
+/* .footer-info {
+  align-self: flex-start; */
+  
+  
+
+.social-media li {
   display: flex;
   flex-direction: column;
   color: white;
-  font-size: 20px;
-  padding: 20px;
-  
+}
+ 
+.fab {
+  display: flex;
 }
 
-.footer-info {
-  align-self: flex-start;
-  
+
   
 
-}
-
- .text-updates {
-   text-align: center;
- }
 
  
   
@@ -409,11 +383,5 @@ h1{
 
 /* desktop size */
 @media screen and (min-width: 1240px) {
-  /* .mens {
-    width: 50%;
-  } */
 }
-
- 
-
- 
+  
