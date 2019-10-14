@@ -235,21 +235,37 @@ html {
   font-weight: bold;
   font-style: italic;
   opacity: .65;
+  padding-top: 5vw;
 
 }
 
+
+  
   
   
   
-  
 
 
 
   
+.carousel {
+  margin: 5%;
+  
+  
+}
+.carousel-cell {
+  padding: 0 2.6% 0 2.6%;
+  
+}
 
 
 
 
+
+.carousel-cell img {
+  width: 18vw;
+  height: auto;
+}
 
 
 
@@ -257,22 +273,25 @@ html {
  .carousel-cell  h6 { 
   width: 25%;
   height: 50px;
-  display: flex; 
+  /* display: flex; 
   justify-content: center; 
-  align-self: center;
+  align-self: center; */
   color: #969696;
   font-family: Raleway, sans-serif; 
+  padding-left: 40%;
   
 }
 
 
 .carousel-cell  h3 {
-  width: 25%;
+  /* width: 25%;
   height: 50px;
-  display: flex; 
-  justify-content: center;
+   */
   color: #e2574c;
   font-family: Playfair Display Web,serif;
+  font-size: 25px;
+  padding-left: 15%;
+  padding-bottom: 20%;
   
 }
   
@@ -280,10 +299,11 @@ html {
 .carousel-cell  p {
   width: 25%;
   height: 50px;
-  display: flex; 
-  justify-content: center;
+  /* display: flex; 
+  justify-content: center; */
   color: #969696;
   font-family: Raleway, sans-serif;
+  padding-left: 40%;
 } 
   
   
