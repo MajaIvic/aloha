@@ -121,11 +121,12 @@ html {
  
 
 .text {
+  display: flex;
   font-size: 1em;
-  align-self: center;
+  align-self: center; 
   font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
   font-style: normal;
+  text-align: center;
   opacity: .65;
 
 
@@ -236,29 +237,59 @@ html {
   opacity: .65;
 
 }
-.the-loop{
-  display: flex;
-  flex-wrap: wrap;
-}
-.the-loop div h6 {
-  display: flex;
-  justify-content: center;
+
+  
+  
+  
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+ .carousel-cell  h6 { 
+  width: 25%;
+  height: 50px;
+  display: flex; 
+  justify-content: center; 
+  align-self: center;
   color: #969696;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, sans-serif; 
+  
 }
-.the-loop div h3 {
-  display: flex;
+
+
+.carousel-cell  h3 {
+  width: 25%;
+  height: 50px;
+  display: flex; 
   justify-content: center;
   color: #e2574c;
   font-family: Playfair Display Web,serif;
   
 }
-.the-loop div p {
-  display: flex;
+  
+
+.carousel-cell  p {
+  width: 25%;
+  height: 50px;
+  display: flex; 
   justify-content: center;
   color: #969696;
   font-family: Raleway, sans-serif;
-}
+} 
+  
+  
+ 
+
+
 /* category-sign-up */
 
 .sign-up {
@@ -296,11 +327,15 @@ html {
   align-self: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  text-align: center;
   margin-bottom: 80px;
   color: white;
 }  
 
+  
 
+  
+  
 
 
 

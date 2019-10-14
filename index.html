@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/font.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+     
 
 </head>
 
@@ -29,21 +31,7 @@
             <li><a href="#newsletter">Updates</a></li>
         </ul>
     </nav>
-    
-        <!-- <div class=directory>
-            <h5>about</h5>
-            <h5>shop</h5>
-            <h5>featured</h5>
-            <h5>updates</h5>
-        </div> --> 
-
-        <!-- <p>about</p>
-        <p>shop</p>
-        <p>featured</p>
-        <p>updates</p>
-     -->
-  
-       
+     
     <div>
         <img class="cart-icon" src="images/cart-icon.svg" alt=""></div>
 
@@ -58,8 +46,8 @@
 
     <section class="style-text">
         <div class="style-class">Hand-Crafted Styles</div>
-        <div class="text">Aloha Apparel Co. sells only the finest ready-to-travel clothing.<br> our current selection of products or
-            sign-up for updates below.</div>
+        <div class="text">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our<br>
+           current selection of products or sign-up for updates below.</div>
     </section>
     <section class="category">
 
@@ -92,50 +80,50 @@
     <section class="products">
         <h1 class="ml-products">Most-Loved Products</h1>
     </section>
-        <section class="the-loop">
-        <div>
+    <section class="carousel" data-flickity='{"cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell" >
             <img src="./images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
             <h6>DRESS</h6>
             <h3>Stretch Knit Dress</h3>
             <p>$169.00</p>
         </div>
-        <div>
+        <div class="carousel-cell">
             <img src="./images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
             <h6>SHIRTS</h6>
             <h3>Cotton Blue Shirt</h3>
             <p>$89.00</p>
         </div>
-        <div>
+        <div class="carousel-cell">
             <img src="./images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
             <h6>DRESSES</h6>
             <h3>Checked Stretch Dress</h3>
             <p>$129.00</p>
         </div>
-        <div>
+        <div class="carousel-cell">
             <img src="./images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
             <h6>BEGS</h6>
             <h3>Blue Hipster Backpack</h3>
             <p>$69.00</p>
         </div>
-        <div>
+        <div class="carousel-cell">
             <img src="./images/demin-overall-shorts.jpg" alt="Denim Overall Shorts">
             <h6>DENIM</h6>
             <h3>Denim Overall Shorts</h3>
             <p>$89.00</p>
         </div>
-        <div>
+        <div class="carousel-cell">
             <img src="./images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
             <h6>DRESSES</h6>
             <h3>Pink Dotted Dress</h3>
             <p>$99.00</p>
         </div>
-        <div>
+        <div class="carousel-cell">
             <img src="./images/blue-silk-dress.jpg" alt="Blue Silk Dress">
             <h6>DRESSES</h6>
             <h3>Blue Silk Dress</h3>
             <p>$119.00</p>
         </div>
-        <div>
+        <div class="carousel-cell">
             <img src="./images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow Tshirt">
             <h6>SHIRTS</h6>
             <h3>Cotton Yellow Tshirt</h3>
@@ -157,6 +145,10 @@
             <p>Stay updated on our latest product releases, be first to find out about
             <br> upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         </div>
+        <form id="sign-up-form">
+            <input type="email" name="your_email" id="your-email" value="" placeholder="Your Email">
+            <input type="submit" name="subscribe" value="Subscribe" id="subscribe">
+          </form>
     </section>
     
     <footer class="site-footer">
@@ -178,6 +170,11 @@
         </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+    
+
+       
+
 </body>
 
 </html>
