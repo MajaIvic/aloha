@@ -266,12 +266,13 @@ html {
 
   
 .carousel {
-  margin: 5%;
+  margin: 11%;
+
   
   
 }
 .carousel-cell {
-  padding: 0 2.5% 0 2.5%;
+  padding: 0 26% 0 13%;
   
 }
 
@@ -279,10 +280,10 @@ html {
 
 
 
-.carousel-cell img {
-  width: 18vw;
-  height: auto;
-}
+
+
+ 
+
 
 
 
@@ -308,8 +309,8 @@ html {
   color: #e2574c;
   font-family: Playfair Display Web,serif;
   font-size: 25px;
-  padding-left: 10%;
-  padding-bottom: 20%;
+  padding-left: 15%;
+  padding-bottom: 15%;
   
 }
   
@@ -334,7 +335,7 @@ html {
 
 .sign-up {
   width: 100%;
-  height: 24vw;
+  height: 65vw;
   border-style: solid;
   background-image: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url('../images/wave-bkgd.jpg');
   background-repeat: no-repeat;
@@ -374,6 +375,24 @@ html {
   margin-bottom: 80px;
   color: white;
 }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -504,6 +523,40 @@ html {
 .text {
   font-size: 25px;
 }
+
+.carousel {
+  margin: 5%;
+  padding: 0 0 0 2%;
+  
+  
+  
+}
+.carousel-cell {
+  padding: 0 2.5% 0 2.5%;
+  
+}
+
+.carousel-cell img {
+  width: 18vw;
+  height: auto;
+}
+/* .carousel-cell  h6 { 
+  width: 25%;
+  height: 50px;
+  font-size: 12px;
+  padding-left: 40%;
+  
+} */
+.carousel-cell  h3 {
+  font-size: 25px;
+  padding-left: 10%;
+  padding-bottom: 20%;
+  
+}
+.sign-up {
+  width: 100%;
+  height: 24vw;
+
 }
 
 
