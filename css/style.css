@@ -16,26 +16,24 @@ html {
    justify-content: space-between;
    height: 170px; 
    align-items: center;   
+   padding-right: 30%;
 }
 
  .aloha-icon {
-
-  order: 1;
-   width: 16vw;
+   padding-left: 40px;
+   width: 30vw;
+   height: 30vh;
 }
 
 .cart-icon {
-  order:2;
+
   width: 15vw;
   height: 40%;
- 
- 
-
-}
+ }
 .main-navigation {
-  order: 3;
+  
   padding-top: 20%;
-  padding-right: 20%;
+  padding-right: 10%;
 }
 
 
@@ -45,7 +43,7 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   color: #e2574c;
-  padding: 0 5px;
+  padding: 0 20px;
   align-content: center;
   display: flex;
   justify-content: baseline;
@@ -335,8 +333,11 @@ html {
 /* footer section */
 
 .site-footer {
+  
   background: #242424;
-  padding: 60px;
+  width: 100%;
+  height: 30%;
+  /* padding: 60px; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -415,33 +416,54 @@ html {
 @media screen and (min-width: 600px){
   .top {
     display: flex;
-  
-    height: 90px; 
-      
- }
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 12vh;
+    padding: 0 10% 0 10%;
+}
  
   .aloha-icon {
-  flex-wrap: wrap;
-   width: 10em;
-   height: 15%;
-   order: 1;
+    width: 200px;
+   
+ }
+ 
+ .cart-icon {
+   width: 70px;
+  
+ 
+
+  
+ }
+ 
+  
+ .main-navigation {
+   
+   padding-top: 0%;
+   padding-left: 5%;
  }
  
  
- .main-navigation {
-  flex-wrap: wrap;
-  padding-top: 0;
-  padding-left: 0;
-  order: 2;
-}
-.cart-icon {
-flex-wrap: wrap;
-  width: 60%;
-  height: 15%;
-  order: 3;
-
-
-}
+ .main-navigation a {
+  
+   font-family: Ralway,sans-serif;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #e2574c;
+   padding: 0 20px;
+   align-content: center;
+   display: flex;
+   justify-content: baseline;
+   
+ }
+ 
+ .main-navigation ul {
+   display: flex;
+   flex-direction: row;
+  
+ }
+  
  
    
  /* .main-navigation a {
@@ -550,7 +572,8 @@ flex-wrap: wrap;
 
  .site-footer{
    width: 100%;
-  height: 35vh; 
+   height: 50vh;
+
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -585,31 +608,32 @@ flex-wrap: wrap;
   opacity: .65;
 }
 
-.social-media {
+.social-media  {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 10%;
- 
- 
+  flex-direction: row;
   
+  padding-right: 20%;
+  padding-bottom: 10%;
 }
 
 .fab {
   display: flex;
   flex-direction: column;
+ 
+ 
   
 }
-.social-media  li span {
+.social-media  span {
   
  display: flex;
  flex-direction: column;
+ font-size: 15px;
 }
 
  .social-media ul {
   display: flex;
-
   flex-direction: column;
+  
 }
   
 
