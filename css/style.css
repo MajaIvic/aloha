@@ -13,78 +13,70 @@ html {
  .top {
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
-   height: 90px; 
+   justify-content: space-between;
+   height: 170px; 
    align-items: center;   
-   
- 
-   
- }
- .aloha-icon {
-  
-  width: 40%;
-  height: 15%;
-   
 }
+
+ .aloha-icon {
+
+  order: 1;
+   width: 16vw;
+}
+
 .cart-icon {
-  width: 60%;
-  height: 15%;
+  order:2;
+  width: 15vw;
+  height: 40%;
+ 
+ 
 
 }
+.main-navigation {
+  order: 3;
+  padding-top: 20%;
+  padding-right: 20%;
+}
+
+
 .main-navigation a {
-  
+ 
   font-family: Ralway,sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: #e2574c;
+  padding: 0 5px;
+  align-content: center;
+  display: flex;
+  justify-content: baseline;
   
 }
-.main-navigation li  {
+
+.main-navigation ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-
+  vertical-align: baseline;
 }
-  /* .main-navigation  li  a {
-    display: flex;
-    align-self: center;
-    flex-direction: row;
-   
-   text-decoration: none;
-   color: #e2574c;
-   display: inline-block;
-   
   
-
-   
- }
-  */
- 
-
-
-  /* banner area */
- 
- 
- .banner { 
-  width: 100vw;
-  height: 70vh;
+.banner { 
+  width: 115vw;
+  height: 80vh;
   margin: 0%;
   border-style: solid;
   background-image: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../images/banner-girl.png),url(../images/flower-bkgd.jpg);
   background-repeat: no-repeat;
   background-size: cover,250px;
-  
   background-position: center,center 60px,center;
   display: flex;
   justify-content: center ;
   
- } 
+} 
 .banner-text{
   display: flex;
   align-self: center;
   flex-direction: column;
-   /* font-size: 1em;  */
 } 
+
 .new-colection {
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -93,8 +85,6 @@ html {
   text-transform: uppercase;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 
-  
-  
 }
 .spring-summer {
   color: white;
@@ -103,35 +93,25 @@ html {
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
   
-
-
-
-
-
-
+/* style-class section */
  
- /* style-class section */
- 
-
- .style-text  {
+.style-text  {
    display: flex;
    flex-direction: column;
    justify-content: space-between; 
    padding: 75px;
    height: 300px;
-   
 }
+
 .style-class {
   align-self: center;
-  font-size: 2em;
+  font-size: 1.6em;
   font-family: "Playfair Display";
   font-weight: bold;
   font-style: italic;
   opacity: .65;
-
 }
  
-
 .text {
   display: flex;
   font-size: 1em;
@@ -140,11 +120,10 @@ html {
   font-style: normal;
   text-align: center;
   opacity: .65;
-
-
 }
 
 /* category-section */
+
 .category {
   display: flex;
   flex-wrap: wrap;
@@ -153,8 +132,6 @@ html {
   text-transform: uppercase;
   color: white;
 }
-
-
 
 .category-mens {
   width: 100%;
@@ -195,6 +172,7 @@ html {
   align-items: center;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
+
 .category-sale {
   width: 50%;
   height: 50vw;
@@ -208,6 +186,7 @@ html {
   align-items: center;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
+
 .category-bags {
   width: 50%;
   height: 50vw;
@@ -219,6 +198,7 @@ html {
   align-items: center;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
+
 .category-womens {
   width: 100%;
   height: 50vw;
@@ -233,94 +213,47 @@ html {
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
-  
-  
-
-
- 
-  
-
-
-  
-
-
-/* category-products */
+  /* category-products */
 .ml-products {
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Playfair Display";
   font-weight: bold;
   font-style: italic;
   opacity: .65;
-  padding-top: 5vw;
-
+  padding-top: 7vw;
 }
 
-
-  
-  
-  
-  
-
-
-
-  
 .carousel {
-  margin: 11%;
-
-  
-  
+  margin: 8%;
 }
+
 .carousel-cell {
-  padding: 0 26% 0 13%;
-  
+  padding: 0 20% 0% 8%;
 }
 
-
-
-
-
-
-
- 
-
-
-
-
-
- .carousel-cell  h6 { 
+.carousel-cell  h6 { 
   width: 25%;
   height: 50px;
-  /* display: flex; 
-  justify-content: center; 
-  align-self: center; */
   color: #969696;
   font-family: Raleway, sans-serif; 
   font-size: 12px;
   padding-left: 40%;
-  
 }
 
-
 .carousel-cell  h3 {
-  /* width: 25%;
-  height: 50px;
-   */
   color: #e2574c;
   font-family: Playfair Display Web,serif;
   font-size: 25px;
-  padding-left: 15%;
+  padding-left: 13%;
   padding-bottom: 15%;
   
 }
   
-
 .carousel-cell  p {
   width: 25%;
   height: 50px;
-  /* display: flex; 
-  justify-content: center; */
   color: #969696;
   font-family: Raleway, sans-serif;
   padding-left: 40%;
@@ -328,15 +261,11 @@ html {
   
 } 
   
-  
- 
-
-
 /* category-sign-up */
 
 .sign-up {
   width: 100%;
-  height: 65vw;
+  height: 85vw;
   border-style: solid;
   background-image: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url('../images/wave-bkgd.jpg');
   background-repeat: no-repeat;
@@ -350,17 +279,16 @@ html {
   align-items: center;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
+
 .sign-up-form {
   background-color: white;
   padding: 5px;
   border-radius: 5em;
-  width: 30%;
+  width: 80%;
   height: 16%;
   display: flex;
   justify-content: space-between;
   
-
-
 }
 .submit {
   background-color: #e2574c;
@@ -372,7 +300,6 @@ html {
   text-align: center;
   font-size: 1.1em;
 
-  
 }
 .email {
   width: 60%;
@@ -381,17 +308,9 @@ html {
   text-align: left;
   padding-left: 5%;
   opacity: .65;
-
 }
  
-
-
-
-  
-  
-
-
- .updates {
+.updates {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,9 +319,9 @@ html {
   font-size: 35px;
   margin-bottom: 48px;
   color: white;
-
 }
- .text-updates {
+
+.text-updates {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -413,64 +332,24 @@ html {
   color: white;
 }  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-
-
-
-
-
-
- 
-
-
-
-
+/* footer section */
 
 .site-footer {
-  
   background: #242424;
   padding: 60px;
-  
-}
-.site-footer{
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-
 }
 
 .footer-info {
   display: flex;
   flex-direction: column;
-  font-size: 1.2vw;
+  font-size: 4vw;
   padding-left: 5%;
-
+  align-items: center;
+  
 }
 
 .copyright p {
@@ -483,35 +362,48 @@ html {
  .info  {
   color: white;
   padding-bottom: 11%;
-  
 }
+
 .info a {
   color: white;
 }
+
 .address {
   color: white;
   opacity: .65;
 }
-
-
- .social-media  {
+ .social-media {
   display: flex;
-  flex-direction: column;
-  color: white;
-  padding-bottom: 10%;
+ padding-top: 10%;
   
-}
- 
+} 
+
 .fab {
-  display: flex;
-  flex-direction: column;
-}
-.social-media li span {
+  color: white;
+  font-size: 1.3rem;
+} 
+.social-media span {
+  color: white;
+  padding: 0;
+  font-family: Raleway Web,sans-serif;
+  font-weight:0;
+  font-size: 0;
+  padding-top: 20px; 
+} 
+ .social-media ul {
   display: flex;
   flex-direction: row;
+  padding-left: 10%; 
   
-}
-  
+} 
+ .social-media li {
+  padding-bottom: 0;
+  padding: 0 20% 0 0;
+
+}  
+
+ 
+
 
 
  
@@ -520,7 +412,50 @@ html {
   
 /* Breakpoint */
 /* tablet size */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px){
+  .top {
+    display: flex;
+  
+    height: 90px; 
+      
+ }
+ 
+  .aloha-icon {
+  flex-wrap: wrap;
+   width: 10em;
+   height: 15%;
+   order: 1;
+ }
+ 
+ 
+ .main-navigation {
+  flex-wrap: wrap;
+  padding-top: 0;
+  padding-left: 0;
+  order: 2;
+}
+.cart-icon {
+flex-wrap: wrap;
+  width: 60%;
+  height: 15%;
+  order: 3;
+
+
+}
+ 
+   
+ /* .main-navigation a {
+    
+    padding: 0 20px;
+    order: 3;
+  
+  } */
+
+  .style-class {
+  
+    font-size: 2em;
+
+  }
   .category-mens {
     width: 50%;
     height: 25vw;
@@ -546,8 +481,17 @@ html {
   width: 50%;
   height: 25vw;
 }
+
+.ml-products {
+  font-size: 40px;
+  padding-top: 5vw;
+}
 /* .banner-text {
   font-size: 3em; */
+.banner { 
+    width: 100vw;
+    height: 70vh;
+}
 .new-colection {
   font-size: 1.5em;
 }
@@ -577,13 +521,7 @@ html {
   width: 18vw;
   height: auto;
 }
-/* .carousel-cell  h6 { 
-  width: 25%;
-  height: 50px;
-  font-size: 12px;
-  padding-left: 40%;
-  
-} */
+
 .carousel-cell  h3 {
   font-size: 25px;
   padding-left: 10%;
@@ -595,6 +533,13 @@ html {
   height: 24vw;
 
 }
+.sign-up-form {
+  padding: 5px;
+  border-radius: 5em;
+  width: 30%;
+  height: 16%;
+  
+}
 
 
 
@@ -603,11 +548,78 @@ html {
 
 
 
+ .site-footer{
+   width: 100%;
+  height: 35vh; 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+  padding-left: 5%;
+  
+}
+
+.copyright p {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-self: stretch;
+  padding-bottom: 10%;
+}
+ .info  {
+  color: white;
+  padding-bottom: 11%;
+}
+.info a {
+  color: white;
+}
+
+.address {
+  color: white;
+  opacity: .65;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10%;
+ 
+ 
+  
+}
+
+.fab {
+  display: flex;
+  flex-direction: column;
+  
+}
+.social-media  li span {
+  
+ display: flex;
+ flex-direction: column;
+}
+
+ .social-media ul {
+  display: flex;
+
+  flex-direction: column;
+}
+  
 
 
 
+
+} 
 
 /* desktop size */
- @media screen and (min-width: 1240px)  {
+@media screen and (min-width: 1240px)  {
 
- }
+ 
+}
