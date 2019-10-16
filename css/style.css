@@ -571,8 +571,8 @@ html {
 
 
  .site-footer{
-   width: 100%;
-   height: 50vh;
+
+   height: 30vh;
 
   display: flex;
   justify-content: space-between;
@@ -611,14 +611,16 @@ html {
 .social-media  {
   display: flex;
   flex-direction: row;
+  padding-bottom: 11%;
   
   padding-right: 20%;
-  padding-bottom: 10%;
+
 }
 
 .fab {
   display: flex;
   flex-direction: column;
+  
  
  
   
@@ -628,6 +630,7 @@ html {
  display: flex;
  flex-direction: column;
  font-size: 15px;
+ padding: 0% 40% 10% 40%;
 }
 
  .social-media ul {
@@ -644,6 +647,14 @@ html {
 
 /* desktop size */
 @media screen and (min-width: 1240px)  {
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px; 
+    align-items: center;   
+    padding-right: 15%;
+ }
 
  
 }
