@@ -21,21 +21,25 @@
 <body>
 
     <header class="top">
-            <div>
-            <img class="aloha-icon" src="images/aloha-logo.svg" alt=""></div>
-    <nav class="main-navigation">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Shop</a></li>
-            <li><a href="#featured">Featured</a></li>
-            <li><a href="#newsletter">Updates</a></li>
-        </ul>
-    </nav>
-     
-     <div>
-        <img class="cart-icon" src="images/cart-icon.svg" alt=""></div>
+                
+    
+            <img class="aloha-icon" src="images/aloha-logo.svg" alt="">
+            <div class="screen-reader-text"><h1>Aloha Apparel Co.</h1></div>
+        
 
+        <img class="cart-icon" src="images/cart-icon.svg" alt="">
+
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#newsletter">Updates</a></li>
+            </ul>
+        </nav>
+            
     </header>
+
     <section class="banner">
     <div class="background-image" src="flower bkgd.jpg"></div>
     <section class="banner-text">
@@ -44,43 +48,32 @@
     </section>
     </section>
 
-    <section class="style-text">
+    <section class="style-text" id="about">
         <div class="style-class">Hand-Crafted Styles</div>
         <div class="text">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our<br>
            current selection of products or sign-up for updates below.</div>
     </section>
-    <section class="category">
+    <section class="category" id="products">
 
-        <div class="category-mens">
-        <p>MEN'S</p>
-        </div>
-
-        <div class="category-trends">
-        <p>TRENDS</p>
-        </div>
-
-        <div class="category-glasses">
-        <p>GLASSES</p>    
-        </div>
-    
-        <div class="category-sale">
-        <p>SALE</p>
-        </div>
         
-        <div class="category-bags">
-        <p>BAGS</p>
-        </div>
-                    
-        <div class="category-womens">
-        <p>WOMEN'S</p>
-        </div>
-         
-    </section>
+            <a class="category-mens" href="#">MEN'S</a>
 
-    <section class="products">
+            <a class="category-trends" href="#">TRENDS</a>
+
+            <a class="category-glasses" href="#">GLASSES</a>
+          
+            <a class="category-sale" href="#">SALE</a>
+      
+            <a class="category-bags" href="#">BAGS</a>
+       
+            <a class="category-womens" href="#">WOMEN'S</a>
+       
+     </section>
+
+    <section class="products"id="featured">
         <h1 class="ml-products">Most-Loved Products</h1>
     </section>
-    <section class="carousel" data-flickity='{"cellAlign": "left", "contain": true , "autoPlay": true}'>
+    <section class="carousel"  data-flickity='{"cellAlign": "left", "contain": true , "autoPlay": true}'>
         <div class="carousel-cell">
             <img src="./images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
             <h6>DRESS</h6>
@@ -133,7 +126,7 @@
     
     </section>
    
-    <section class="sign-up">
+    <section class="sign-up" id="newsletter">
     
         <div class="updates">
             <p>Sign-up for Updates</p>
@@ -142,13 +135,13 @@
             <p>Stay updated on our latest product releases, be first to find out about
             <br> upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         </div>
-        <form class="sign-up-form">
+        <form class="sign-up-form" id="sign-up-form">
             <input class="email" name="your_email" id="your-email" value=""placeholder="Your Email">
-            <input class="submit" name="subscribe" value="Subscribe" id="subscribe">
+            <button type="submit" class="submit" name="subscribe" id="subscribe">Subscribe</button>
           </form>
     </section>
     
-    <footer class="site-footer">
+    <footer>
         <div class="footer-info">
         <div class="copyright">
             <p>&copy;2019 Aloha Apparel Co.<br>
@@ -167,22 +160,22 @@
                  <li >
                  <a href="#">
                      <i class ="fab fa-facebook"></i>
-                     <span>Facebook</span></a>
+                     <span class="social-name">Facebook</span></a>
                  </li>
                  <li >
                     <a href="#">
                         <i class ="fab fa-twitter"></i>
-                        <span>Twitter</span></a>
+                        <span class="social-name">Twitter</span></a>
                 </li>
                  <li >
                      <a href="#">
                         <i class ="fab fa-instagram"></i>
-                        <span>Instagram</span></a>
+                        <span class="social-name">Instagram</span></a>
                  </li>
                  <li >
                     <a href="#">
                        <i class ="fab fa-pinterest"></i>
-                       <span>Pinterest</span></a>
+                       <span class="social-name">Pinterest</span></a>
                 </li>
                
             </ul> 
